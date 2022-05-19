@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="custom.css" />
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/opendyslexic" type="text/css"/>
+
+    <title>LITOutreach</title>
+  </head>
+  <body>
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">LITOutreach</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-sm-0 nav nav-three">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home_index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_index.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="copyright_index.html"
+                    >Copyrighting</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="publishing_index.html"
+                    >Publishing</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery_index.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="creators_index.html">Creators</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active parallaxImg11" data-bs-interval="3000"></div>
+        <div class="carousel-item parallaxImg12" data-bs-interval="5000"></div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--Font Button -->
+    <button type="button" class="btn btn-dark float-end" id='FontFamily' style="margin: 5px">
+      <span id="buttonFont"></span>
+    </button>
+
+    <!-- Section One -->
+    <div style="background-color: #f8f8f8">
+      <br />
+      <h1 class="gallerySectionOneHeader h1 fw-bold">Novel Series</h1>
+      <p style="text-align: center">
+        The Timeless series, the debue collaborative project of Ettiene Shaw and
+        Danica Kane.
+        <br />
+        A whirlwind tale compleate with sci-fi adventure and imersive world
+        building
+      </p>
+
+      <div style="text-align: center">
+        <!-- Luna Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-dark"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop1"
+          style="font-weight: bold; margin: 25px; width: 250px; height: 380px"
+        >
+          <img src="img/luna-cover.jpg" width="200px" style="margin: 5px" />
+          <br />
+          Luna
+        </button>
+
+        <!-- Modal Luna -->
+        <div
+          class="modal fade"
+          id="staticBackdrop1"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="img/luna-cover.jpg"
+                  style="width: 300px; margin: 25px; text-align: center"
+                />
+                <div class="float-end" style="width: 220px; margin-right: 15px">
+                  <img
+                    src="img/logos_Dark/timeless_profile_dark.png"
+                    style="width: 180px"
+                  />
+                  <img
+                    src="img/logos_Dark/ettiene_profile_dark.png"
+                    style="width: 180px"
+                  />
+                  <img
+                    src="img/logos_Dark/danica_profile_dark.png"
+                    style="width: 180px"
+                  />
+                </div>
+                <div style="width: 200px; float: start">
+                  <h1 class="modalHeader">Luna</h1>
+                  <h1 class="modalHeaderSub">By Danica Kane & Ettiene Shaw</h1>
+                  <p class="modalParagraph">
+                    A LITOutreach Original Series. Co authored by Ettiene Shaw
+                    and Danica Kane under the alias of the two main characters.
+                    <br />
+                    <br />
+                    The first book of the Timeless Series. Life is normal for
+                    Nick Galloway and Eliza Sparks, if a bit boring. But when
+                    fate comes knocking their entire worlds are turned upside
+                    down. Join them as they navigate the dangers of a life on
+                    the lam, of gifts that both endanger and protect them, and
+                    friendships formed and broken
+                  </p>
+
+                  <a
+                    href="https://drive.google.com/file/d/1S8RcmPaRA9KoVoIbKuYzvpy9e3cxKMTC/view?usp=sharing"
+                    style="color: #ffffff; font-weight: bold; margin-top: 10px"
+                    >LINK TO NOVEL</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Moon Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-dark"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop2"
+          style="font-weight: bold; margin: 25px; width: 250px; height: 380px"
+        >
+          <img src="img/new-moon.jpg" width="200px" style="margin: 5px" />
+          <br />
+          New Moon
+        </button>
+
+        <!-- New Moon modal  -->
+        <div
+          class="modal fade"
+          id="staticBackdrop2"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="img/new-moon.jpg"
+                  style="width: 300px; margin: 25px; text-align: center"
+                />
+                <div class="float-end" style="width: 220px; margin-right: 15px">
+                  <img
+                    src="img/logos_Dark/timeless_profile_dark.png"
+                    style="width: 180px"
+                  />
+                  <img
+                    src="img/logos_Dark/ettiene_profile_dark.png"
+                    style="width: 180px"
+                  />
+                  <img
+                    src="img/logos_Dark/danica_profile_dark.png"
+                    style="width: 180px"
+                  />
+                </div>
+                <div style="width: 200px; float: start">
+                  <h1 class="modalHeader">New Moon</h1>
+                  <h1 class="modalHeaderSub">By Danica Kane & Ettiene Shaw</h1>
+                  <p class="modalParagraph">
+                    A LITOutreach Original Series. Co authored by Ettiene Shaw
+                    and Danica Kane under the alias of the two main characters.
+                    <br />
+                    <br />
+                    The second book of the timeless series. Rejoin Nick and
+                    Eliza as they navigate the in's and out's murder cases,
+                    social conflict, and a nation at war
+                  </p>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <a
+                    href="https://drive.google.com/file/d/1szrPEbEsQZckrMUxvtDxAToTm_CoqaMC/view?usp=sharing"
+                    style="color: #ffffff; font-weight: bold; margin-top: 10px"
+                    >LINK TO NOVEL</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Last Quarter Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-dark"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop3"
+          style="font-weight: bold; margin: 25px; width: 250px; height: 380px"
+        >
+          <img
+            src="img/last-quarter-jpg.png"
+            width="205px"
+            style="margin: 5px"
+          />
+          <br />
+          The Last Quarter
+        </button>
+
+        <!-- Last Quarter modal  -->
+        <div
+          class="modal fade"
+          id="staticBackdrop3"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="img/last-quarter-jpg.png"
+                  style="width: 300px; margin: 25px; text-align: center"
+                />
+                <div class="float-end" style="width: 220px; margin-right: 15px">
+                  <img
+                    src="img/logos_Dark/timeless_profile_dark.png"
+                    style="width: 180px"
+                  />
+                  <img
+                    src="img/logos_Dark/ettiene_profile_dark.png"
+                    style="width: 180px"
+                  />
+                  <img
+                    src="img/logos_Dark/danica_profile_dark.png"
+                    style="width: 180px"
+                  />
+                </div>
+                <div style="width: 200px; float: start">
+                  <h1 class="modalHeader">The Last Quarter</h1>
+                  <h1 class="modalHeaderSub">By Danica Kane & Ettiene Shaw</h1>
+                  <p class="modalParagraph">
+                    A LITOutreach Original Series. Co authored by Ettiene Shaw
+                    and Danica Kane under the alias of the two main characters.
+                    <br />
+                    <br />
+                    The final book of the Timeless Series. Join Nick and Eliza
+                    for the final adventure. Friends will be lost. Allies
+                    betrayed. And the truth revealed.
+                  </p>
+                  <p class="modalParagraphNote">STILL IN PRODUCTION</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+
+    <!-- Section Two -->
+    <section style="background-color: #ffffff">
+      <br />
+      <div class="container" style="background-color: #ffffff">
+        <div style="width: 600px; margin-right: 0px;">
+          <h1 class="gallerySecondHeader fw-bold" style="margin-bottom: 10px">
+            Writing
+          </h1>
+          <!-- Flares Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-dark"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop4"
+            style="
+              font-weight: bold;
+              width: 250px;
+              height: 380px;
+              text-align: center;
+              margin-right: 25px;
+              margin-top: 10px;
+            "
+          >
+            <img src="img/flares.jpg" width="200px" style="margin: 5px;" />
+            <br />
+            Flares
+          </button>
+
+          <!-- Flares modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop4"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="img/flares.jpg"
+                    style="width: 300px; margin: 25px; margin-left: 15%"
+                  />
+                  <br />
+                  <img
+                    src="img/logos_Dark/danica_profile_dark.png"
+                    style="width: 250px"
+                    class="float-end"
+                  />
+                  <div style="width: 450px; float: start">
+                    <h1 class="modalHeader">Flares</h1>
+                    <h1 class="modalHeaderSub">By Danica Kane</h1>
+                    <p class="modalParagraph">
+                      When tragedy strikes Joseph's family he soon finds himself
+                      on the receiving end of his grief stricken fathers
+                      feverish attempts to rekindle his sons fire. But what
+                      happens when his father's actions, though pure in intent,
+                      land Joseph in terrible danger. It begins with a whisper,
+                      a rumour of an elusive summer camp conveniently presenting
+                      itself to the blinded man in the form of a rumpled
+                      brochure. But before long, friends turn on friends.
+                      Children grown old and weary with violence. And all are
+                      destined to fall to the flames engulfing them.
+                    </p>
+                    <br />
+                    <a
+                      href="https://drive.google.com/file/d/1mVzBoXVaM9--Q9f-kw7OnoUz6q_xM8i2/view?usp=sharing"
+                      style="
+                        color: #ffffff;
+                        font-weight: bold;
+                        margin-top: 10px;
+                        margin-left: 20px;
+                      "
+                      >LINK TO NOVEL</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reflection Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-dark"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop5"
+            style="
+              font-weight: bold;
+              width: 250px;
+              height: 380px;
+              text-align: center;
+              margin-right: 25px;
+              margin-top: 10px;
+
+            "
+          >
+            <img src="img/REFLECTION.jpg" width="200px" style="margin: 5px;" />
+            <br />
+            Reflection
+          </button>
+
+          <!-- Reflection modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop5"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="img/REFLECTION.jpg"
+                    style="width: 300px; margin: 25px; margin-left: 15%"
+                  />
+                  <br />
+                  <img
+                    src="img/logos_Dark/danica_profile_dark.png"
+                    style="width: 250px"
+                    class="float-end"
+                  />
+                  <div style="width: 450px; float: start">
+                    <h1 class="modalHeader">Reflection</h1>
+                    <h1 class="modalHeaderSub">By Danica Kane</h1>
+                    <p class="modalParagraph">
+                      Andy Croft always thought himself a placid boy. At least
+                      that's what everybody who knew him said.
+                      <br />
+                      <br />
+                      “There goes poor Andy, a shy boy, hardley leaves the
+                      house,”
+                      <br />
+                      <br />
+                      “Oh look at him, its no wonder hes all alone, so quiet and
+                      timid as he is,”
+                      <br />
+                      <br />
+                      But when Andy awakes in the woods behind his house his
+                      hands caked in blood and no memory of how he got there,
+                      he's not so sure anymore. People start disappearing, his
+                      friends and enemies like; and each time Andy feels a
+                      little more of himself slipping away. Lost among the
+                      contents of his closet a dusty ornate mirror starts to
+                      weigh on his mind. Cracks are forming, and Andy is
+                      terrified to think what might escape when the glass
+                      shatters.
+                    </p>
+                    <br />
+                    <a
+                      href="https://drive.google.com/file/d/1XCysF6d57FH-n_lIyBpVwuxwE03q0s_A/view?usp=sharing"
+                      style="
+                        color: #ffffff;
+                        font-weight: bold;
+                        margin-top: 10px;
+                        margin-left: 20px;
+                      "
+                      >LINK TO NOVEL</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spanGallery"></div>
+
+        <div style="width: 600px">
+          <h1 class="gallerySecondHeader fw-bold" style="margin-bottom: 10px">
+            Illustrations
+          </h1>
+
+          <!-- art one trigger modal -->
+          <button
+            type="button"
+            class="btn btn-dark"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop6"
+            style="
+              font-weight: bold;
+              width: 250px;
+              height: 380px;
+              text-align: center;
+              margin-right: 25px;
+              margin-top: 10px;
+            "
+          >
+            <img
+              src="img/Bentleyblue_SKETCG.png"
+              width="200px"
+              style="margin: 5px; margin-bottom: 25px"
+            />
+            <br />
+            Bentley and Blue
+            <br />
+            (By Bentley)
+          </button>
+
+          <!-- art one modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop6"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="img/Bentleyblue_SKETCG.png"
+                    style="width: 400px; margin: 25px"
+                  />
+                  <img
+                    src="img/logos_Dark/bentley_profile_dark.png"
+                    style="width: 250px"
+                    class="float-end"
+                  />
+                  <div style="width: 200px; float: start">
+                    <h1 class="modalHeader">Bentley and Blue</h1>
+                    <h1 class="modalHeaderSub">By Bentley</h1>
+                    <p class="modalParagraph">
+                      An online art peice by artist Bentley. See his profile for
+                      more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- art two Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-dark"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop7"
+            style="
+              font-weight: bold;
+              width: 250px;
+              height: 380px;
+              text-align: center;
+              margin-right: 25px;
+              margin-top: 10px;
+            "
+          >
+            <img
+              src="img/IMG_1131.jpg"
+              width="200px"
+              style="margin: 5px; margin-bottom: 25px"
+            />
+            <br />
+            Face Off
+            <br />
+            (By Bentley)
+          </button>
+
+          <!-- art two modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop7"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="img/IMG_1131.jpg"
+                    style="width: 300px; margin: 25px; margin-left: 15%"
+                  />
+                  <img
+                    src="img/logos_Dark/bentley_profile_dark.png"
+                    style="width: 250px"
+                    class="float-end"
+                  />
+                  <div style="width: 200px; float: start">
+                    <h1 class="modalHeader">Face Off</h1>
+                    <h1 class="modalHeaderSub">By Bentley</h1>
+                    <p class="modalParagraph">
+                      An physical art peice by artist Bentley. See his profile
+                      for more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #2c2b2b">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-light m-1"
+            href="https://docs.google.com/presentation/d/1peDqSZQdapvTjckcBKU4xv6EcPjQx3FB49fwnGLSV4k/edit#slide=id.g1277e2048df_0_10"
+            role="button"
+            ><i class="bi bi-facebook"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-light m-1"
+            href="https://docs.google.com/presentation/d/1peDqSZQdapvTjckcBKU4xv6EcPjQx3FB49fwnGLSV4k/edit#slide=id.g1277e2048df_0_10"
+            role="button"
+            ><i class="bi bi-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-light m-1"
+            href="https://docs.google.com/presentation/d/1peDqSZQdapvTjckcBKU4xv6EcPjQx3FB49fwnGLSV4k/edit#slide=id.g1277e2048df_0_10"
+            role="button"
+            ><i class="bi bi-envelope-fill"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-light m-1"
+            href="https://docs.google.com/presentation/d/1peDqSZQdapvTjckcBKU4xv6EcPjQx3FB49fwnGLSV4k/edit#slide=id.g1277e2048df_0_10"
+            role="button"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </section>
+      </div>
+
+      <!-- Copyright -->
+      <div
+        class="text-center text-light p-3"
+        style="background-color: rgba(10, 10, 10, 0.664)"
+      >
+        © 2020 Copyright:
+        <a
+          class="text-light"
+          href="file:///Users/danicakane/Downloads/Computer%20science%20website/home_index.html"
+          >LITOutreach.com</a
+        >
+        <br />
+        <br />
+        <a
+          class="text-center text-light p-3"
+          href="https://www.freepik.com/vectors/old-library"
+          >Old library vector created by upklyak - www.freepik.com</a
+        >
+        <br />
+        <a
+          class="text-center text-light p-3"
+          href="https://www.freepik.com/vectors/art-room"
+          >Art room vector created by upklyak - www.freepik.com</a
+        >
+      </div>
+    </footer>
+
+    <!--link to Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="index.js"
+    ></script>
+  </body>
+</html>

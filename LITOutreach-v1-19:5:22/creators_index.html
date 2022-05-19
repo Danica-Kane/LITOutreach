@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="custom.css" />
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/opendyslexic" type="text/css"/>
+
+    <title>LITOutreach</title>
+  </head>
+  <body>
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">LITOutreach</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-sm-0 nav nav-four">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home_index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_index.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="copyright_index.html"
+                    >Copyrighting</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="publishing_index.html"
+                    >Publishing</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery_index.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="creators_index.html">Creators</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active parallaxImg13" data-bs-interval="3000"></div>
+        <div class="carousel-item parallaxImg14" data-bs-interval="4000"></div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--Font Button -->
+    <button type="button" class="btn btn-dark float-end" id='FontFamily' style="margin: 5px">
+      <span id="buttonFont"></span>
+    </button>
+
+    <!--Section one-->
+    <div style="background-color:#FFFFFF" class="specialDiv">
+      <div class="float-start">
+        <h1 class="creatorsHeader h1 fw-bold">Creators</h1>
+
+        <p class="creatorsParagraph">
+          Meet the independent creators promoting their work on LITOutreach.
+          Creators include artists/illustrators and authors. Check out the
+          gallery to see some of there work. Click on the creators profile picture to veiw their profile.
+        </p>
+      </div>
+
+      <!-- Danica Button trigger modal -->
+      <button
+        type="button"
+        class="btn float-end"
+        data-bs-toggle="modal"
+        data-bs-target="#danicaProfileModal"
+        style="margin:0px;"
+      >
+        <img
+          src="img/profile_icons/danica_profile_light.png"
+          width="400px"
+          class="float-end"
+        />
+      </button>
+
+      <!-- Danica Modal -->
+      <div
+        class="modal fade"
+        id="danicaProfileModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="img/logos_Dark/danica_profile_dark.png"
+                width="300px"
+                class="float-start"
+              />
+
+              <h1 class="modalHeader" style="margin-top: 40px;">Danica Kane</h1>
+                  <h1 class="modalHeaderSub">Founder of LITOutreach, Author</h1>
+                  <p class="modalParagraph">
+                    Danica Kane is the founder and programer of LITOutreach.
+                    Additionally she is the author of LITOutreach's two featured novels -
+                    Reflection and Flares - as well as co-author of The Timeless Series with Ettiene Shaw,
+                    which is currently published under their joint LITOutreach account bearing the same
+                    name as the series. 
+                  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Section two-->
+    <div class="specialDiv" style="text-align: center; background-color:#F8F8F8;">
+      <!-- Bentley Button trigger modal -->
+      <button
+        type="button"
+        class="btn float-center"
+        data-bs-toggle="modal"
+        data-bs-target="#bentleyProfileModal"
+        style="margin:25px;"
+      >
+        <img
+          src="img/profile_icons/bentley_profile.png"
+          width="400px"
+        />
+      </button>
+
+      <!-- Bentley Modal -->
+      <div
+        class="modal fade"
+        id="bentleyProfileModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/logos_Dark/bentley_profile_dark.png" class="float-start" width="300px">   
+              <h1 class="modalHeader" style="margin-top: 40px;">Bentley</h1>
+                  <h1 class="modalHeaderSub">Illustrator</h1>
+                  <p class="modalParagraph">
+                    Bentley is an illustrator and creator of a series of original characters, including a cartoon version of himself.
+                    LITOutreach features two of his works, one electronic and one physical, both of which incorporate just one of 
+                    his many art styles. 
+                  </p>           
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ettiene Button trigger modal -->
+      <button
+        type="button"
+        class="btn"
+        data-bs-toggle="modal"
+        data-bs-target="#ettieneProfileModal"
+        style="margin:25px;"
+      >
+        <img
+          src="img/profile_icons/ettiene_profile.png"
+          width="400px"
+        />
+      </button>
+
+      <!-- Ettiene Modal -->
+      <div
+        class="modal fade"
+        id="ettieneProfileModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/logos_Dark/ettiene_profile_dark.png" class="float-start" width="300px">
+              <h1 class="modalHeader" style="margin-top: 40px;">Ettiene</h1>
+                  <h1 class="modalHeaderSub">Author</h1>
+                  <p class="modalParagraph">
+                    Ettiene Shaw is an independent author. His works to date include several novels currently in production
+                    while in the public eye. Besides this he is also the co-author of The Timeless Series with Danica Kane
+                    and shares with her the LITOutreach creator account under the same name. 
+                  </p>    
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeless Series Button trigger modal -->
+      <button
+        type="button"
+        class="btn"
+        data-bs-toggle="modal"
+        data-bs-target="#timeProfileModal"
+        style="margin:25px;"
+      >
+        <img
+          src="img/profile_icons/timeless_profile.png"
+          width="400px"
+        />
+      </button>
+
+      <!-- Timeless Series Modal -->
+      <div
+        class="modal fade"
+        id="timeProfileModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/logos_Dark/timeless_profile_dark.png" class="float-start" width="300px">
+              <h1 class="modalHeader" style="margin-top: 30px;">Timeless Series</h1>
+                  <h1 class="modalHeaderSub">Authors</h1>
+                  <p class="modalParagraph">
+                    The joint account of Danica Kane and Ettiene Shaw, dedicated specifically to their 
+                    novel series currently still in production. The Timeless Series. The adventure/fantasy/thriller 
+                    series follows the escapades of two alien children situated on Earth as they discover their heritage
+                    and strive to save it from the threat of humanity. Their life on the lam leads them to form friendships
+                    and make enemies, creating a series that is enthralling in how the reader finds themselves easily sucked
+                    into this new world. 
+                  </p>    
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #2c2b2b">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-light m-1"
+            href="https://docs.google.com/presentation/d/1peDqSZQdapvTjckcBKU4xv6EcPjQx3FB49fwnGLSV4k/edit#slide=id.g1277e2048df_0_10"
+            role="button"
+            ><i class="bi bi-facebook"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-light m-1"
+            href="https://docs.google.com/presentation/d/1peDqSZQdapvTjckcBKU4xv6EcPjQx3FB49fwnGLSV4k/edit#slide=id.g1277e2048df_0_10"
+            role="button"
+            ><i class="bi bi-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-light m-1"
+            href="https://docs.google.com/presentation/d/1peDqSZQdapvTjckcBKU4xv6EcPjQx3FB49fwnGLSV4k/edit#slide=id.g1277e2048df_0_10"
+            role="button"
+            ><i class="bi bi-envelope-fill"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-light m-1"
+            href="https://docs.google.com/presentation/d/1peDqSZQdapvTjckcBKU4xv6EcPjQx3FB49fwnGLSV4k/edit#slide=id.g1277e2048df_0_10"
+            role="button"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </section>
+      </div>
+
+      <!-- Copyright -->
+      <div
+        class="text-center text-light p-3"
+        style="background-color: rgba(10, 10, 10, 0.664)"
+      >
+        © 2020 Copyright:
+        <a
+          class="text-light"
+          href="file:///Users/danicakane/Downloads/Computer%20science%20website/home_index.html"
+          >LITOutreach.com</a
+        >
+        <br />
+        <p class="text-center text-light p-3">Graphics created with Canva</a>
+        <br>
+        <br>
+        <a
+          class="text-center text-light p-3"
+          href="https://www.freepik.com/vectors/old-library"
+          >Old library vector created by upklyak - www.freepik.com</a
+        >
+        <br />
+        <a
+          class="text-center text-light p-3"
+          href="https://www.freepik.com/vectors/art-room"
+          >Art room vector created by upklyak - www.freepik.com</a
+        >
+      </div>
+    </footer>
+
+    <!--link to Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="index.js"
+    ></script>
+  </body>
+</html>
