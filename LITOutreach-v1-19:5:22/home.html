@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -13,13 +17,10 @@
     />
     <link rel="stylesheet" href="custom.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/opendyslexic" type="text/css"/>
-    
+
+    <script src="index.js" type="text/javascript" defer></script>
+
     <title>LITOutreach</title>
   </head>
   <body>
@@ -39,21 +40,24 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-sm-0 nav nav-two">
+          <ul class="navbar-nav ms-auto mb-2 mb-sm-0 nav nav-one-1">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="home_index.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="home.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about_index.html">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact_index.html">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle active"
+                class="nav-link dropdown-toggle"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -64,22 +68,21 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="copyright_index.html"
-                    >Copyrighting</a
-                  >
+                  <a class="dropdown-item" href="copyright.html"
+                    >Copyrighting</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="publishing_index.html"
+                  <a class="dropdown-item" href="publishing.html"
                     >Publishing</a
                   >
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="gallery_index.html">Gallery</a>
+              <a class="nav-link" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="creators_index.html">Creators</a>
+              <a class="nav-link" href="creators.html">Creators</a>
             </li>
           </ul>
         </div>
@@ -93,8 +96,8 @@
       data-bs-ride="carousel"
     >
       <div class="carousel-inner">
-        <div class="carousel-item active parallaxImg7" data-bs-interval="3000"></div>
-        <div class="carousel-item parallaxImg8" data-bs-interval="4000"></div>
+        <div class="carousel-item active parallaxImg1" data-bs-interval="3000"></div>
+        <div class="carousel-item parallaxImg2" data-bs-interval="4000"></div>
       </div>
       <button
         class="carousel-control-prev"
@@ -117,58 +120,40 @@
     </div>
 
     <!--Font Button -->
-    <button type="button" class="btn btn-dark float-end" id='FontFamily' style="margin: 5px">
+    <button type="button" class="btn btn-dark float-end" id='FontFamily' style="margin: 5px;">
       <span id="buttonFont"></span>
     </button>
 
-    <!-- Section One -->
-    <div class="specialDiv">
-      <img
-        src="img/copyright_icon.png"
-        class="img-fluid float-end"
-        alt="Responsive image"
-        width="550"
-      />
+    <!-- Welcome Section One -->
+    <img
+      src="img/home_page_icon.jpg"
+      class="img-fluid float-end"
+      alt="Responsive image"
+      width="550"
+    />
 
-      <h1 class="copyrightHeader h1 fw-bold">Copyrighting?</h1>
+    <h1 class="welcomeHeader h1 fw-bold">Welcome</h1>
 
-      <p class="copyrightParagraph">
-        As an independent creator you alone are responsible for ensuring the
-        safety and security of your work on this site. Whether that be through
-        outside sources or done yourself. Copyrighting your work or applying
-        Creative Commons is one way of ensuring others can't take your work and
-        post it anywhere else or profit from it without your permission. Here at
-        LIT Outreach we are not liable for ensuring you apply such things. We
-        recommend you get acquainted with the following resources to begin
-        learning about Copyright and Creative Commons. Choose what works best
-        for you and think carefully before putting out your work without such
-        protective measures in place.
-      </p>
-    </div>
-
-    <!-- Section Two -->
-    <section style="background-color: #f8f8f8">
+    <p class="welcomeParagraph">
+      Welcome to LITOutreach, a collaborative and promotional hub for all things
+      in the amateur and semi professional literary world. Whether you be an
+      illustrator or a writer, LITOutreach provides a secure third party service
+      to promote your work in a professional manner. Allowing young, or just new
+      amateur independent creators, to rise above the clutter of more public
+      amateur publishing sites and social media. Here we aim to install in
+      creators the skills to protect and promote their work, while beginning to
+      branch out into the more professional world of literacy. Reach new
+      audiences, and own your work with LITOutreach. <br />
       <br />
-      <div class="container" style="background-color: #f8f8f8;">
-        <div style="width: 500px;"> 
-          <p style="font-weight: bold; margin-bottom: 0px;">https://creativecommons.org</p>
-          <p>to learn about creative commons</p>
-          <br>
-          <p style="font-weight: bold; margin-bottom: 0px;">https://guides.library.queensu.ca/c.php?g=704790&p=5014948</p>
-          <p>to learn about how to apply creative commons</p>
-        </div>
-        <div class="span"></div>
-        <div style="text-align: right; width: 500px;"> 
-          <p style="font-weight: bold; margin-bottom: 0px;">https://blog.reedsy.com/guide/copyright-a-book/</p>
-          <p>to learn about the application process for actual copyrights backed by law. Not strictly necessary for all creators. (This is American)
-          </p>
-          <br>
-          <p style="font-weight: bold; margin-bottom: 0px;">https://www.copyright.co.nz/understanding-copyright/what-is-copyright</p>
-          <p>to learn about copyright specifically in NZ</p>
-        </div>
-      </div>
-      <br />
-    </section>
+      Welcome to the creative corner of the internet that is entirely your own.
+    </p>
+  
+    <!-- Welcome Section Two -->
+    <img
+      src="img/LITOutreach featured content.jpg"
+      class="img-fluid"
+      alt="Responsive image"
+    />
 
     <!-- Footer -->
     <footer class="text-center text-white" style="background-color: #2c2b2b">
@@ -223,7 +208,12 @@
         >
         <br />
         <br />
-        <p class="text-center text-light p-3">Graphics made with Canva</p>
+        <a
+          class="text-center text-light p-3"
+          href="https://www.freepik.com/vectors/book-reader"
+          >Book reader vector created by pch.vector - www.freepik.com</a
+        >
+        <br />
         <a
           class="text-center text-light p-3"
           href="https://www.freepik.com/vectors/old-library"
@@ -243,10 +233,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="index.js"
     ></script>
   </body>
 </html>

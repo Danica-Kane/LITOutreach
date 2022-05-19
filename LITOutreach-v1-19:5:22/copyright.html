@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/opendyslexic" type="text/css"/>
-
     <link rel="stylesheet" href="custom.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/opendyslexic" type="text/css"/>
+    
     <title>LITOutreach</title>
   </head>
   <body>
@@ -39,21 +39,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-sm-0 nav nav-one-3">
+          <ul class="navbar-nav ms-auto mb-2 mb-sm-0 nav nav-two">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="home_index.html"
+              <a class="nav-link" aria-current="page" href="home.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about_index.html">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="contact_index.html">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle active"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -64,22 +64,22 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="copyright_index.html"
+                  <a class="dropdown-item" href="copyright.html"
                     >Copyrighting</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="publishing_index.html"
+                  <a class="dropdown-item" href="publishing.html"
                     >Publishing</a
                   >
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="gallery_index.html">Gallery</a>
+              <a class="nav-link" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="creators_index.html">Creators</a>
+              <a class="nav-link" href="creators.html">Creators</a>
             </li>
           </ul>
         </div>
@@ -93,8 +93,8 @@
       data-bs-ride="carousel"
     >
       <div class="carousel-inner">
-        <div class="carousel-item active parallaxImg5" data-bs-interval="3000"></div>
-        <div class="carousel-item parallaxImg6" data-bs-interval="4000"></div>
+        <div class="carousel-item active parallaxImg7" data-bs-interval="3000"></div>
+        <div class="carousel-item parallaxImg8" data-bs-interval="4000"></div>
       </div>
       <button
         class="carousel-control-prev"
@@ -122,102 +122,55 @@
     </button>
 
     <!-- Section One -->
-    <div>
+    <div class="specialDiv">
       <img
-        src="img/contact_icon.jpg"
+        src="img/copyright_icon.png"
         class="img-fluid float-end"
         alt="Responsive image"
         width="550"
-        style="margin-right: 25px; margin-bottom: 25px; margin-left: 25; margin-top: 0px;"
       />
 
-      <h1 class="contactLeftHeader h1 fw-bold">Want to get in touch?</h1>
+      <h1 class="copyrightHeader h1 fw-bold">Copyrighting?</h1>
 
-      <p class="contactLeftParagraph">
-        Contact us with the information bellow for any business inquires. If
-        your looking to submit work, please reference the spesific instructions
-        bellow.
+      <p class="copyrightParagraph">
+        As an independent creator you alone are responsible for ensuring the
+        safety and security of your work on this site. Whether that be through
+        outside sources or done yourself. Copyrighting your work or applying
+        Creative Commons is one way of ensuring others can't take your work and
+        post it anywhere else or profit from it without your permission. Here at
+        LIT Outreach we are not liable for ensuring you apply such things. We
+        recommend you get acquainted with the following resources to begin
+        learning about Copyright and Creative Commons. Choose what works best
+        for you and think carefully before putting out your work without such
+        protective measures in place.
       </p>
-
-      <p
-        class="bi bi-facebook float-start"
-        style="margin-left: 25px; margin-right: 10px; color: #004aad"
-      ></p>
-      <p>@fakeLITOutreach_Facebook</p>
-
-      <p
-        class="bi bi-twitter float-start"
-        style="margin-left: 25px; margin-right: 10px; color: #004aad"
-      ></p>
-      <p>@fakeLITOutreach_Twitter</p>
-
-      <p
-        class="bi bi-envelope-fill float-start"
-        style="margin-left: 25px; margin-right: 10px; color: #004aad"
-      ></p>
-      <p>fakeLITOutreach@gmail.com</p>
-
-      <p
-        class="bi bi-instagram float-start"
-        style="margin-left: 25px; margin-right: 10px; color: #004aad"
-      ></p>
-      <p>@fakeLITOutreach_Insta</p>
     </div>
 
-    <!--Section Two-->
-    <div class="specialDiv" style="background-color: #f8f8f8">
-      <!-- Section Two card -->
-      <div
-        class="card text-white mb-3 float-start"
-        style="
-          max-width: 35rem;
-          margin: 25px;
-          background-color: #0794e6;
-          border-radius: 0px;
-          border: transparent;
-        "
-      >
-        <div class="card-body" style="margin: 10px">
-          <h5 class="card-title" style="font-weight: bold">Basic...</h5>
-          <p class="card-text" style="margin-bottom: 0px">
-            Name : <br />
-            Contact Information : <br />
-            Breif Synopsis Of Your Work : <br />
-            Link To Your Work In Desired Format :
+    <!-- Section Two -->
+    <section style="background-color: #f8f8f8">
+      <br />
+      <div class="container" style="background-color: #f8f8f8;">
+        <div style="width: 500px;"> 
+          <p style="font-weight: bold; margin-bottom: 0px;">https://creativecommons.org</p>
+          <p>to learn about creative commons</p>
+          <br>
+          <p style="font-weight: bold; margin-bottom: 0px;">https://guides.library.queensu.ca/c.php?g=704790&p=5014948</p>
+          <p>to learn about how to apply creative commons</p>
+        </div>
+        <div class="span"></div>
+        <div style="text-align: right; width: 500px;"> 
+          <p style="font-weight: bold; margin-bottom: 0px;">https://blog.reedsy.com/guide/copyright-a-book/</p>
+          <p>to learn about the application process for actual copyrights backed by law. Not strictly necessary for all creators. (This is American)
           </p>
-          <p class="card-text" style="font-style: italic">
-            ( E.G. Amazon Link, Watpad Link, Google Drive PDF, Other )
-          </p>
-          <h5 class="card-title" style="font-weight: bold">
-            If you aren't already a creator...
-          </h5>
-          <p class="card-text" style="margin-bottom: 0px">
-            Bio For Your Creator Profile : <br />
-            Link Profile Picture You Would Like Used :
-          </p>
+          <br>
+          <p style="font-weight: bold; margin-bottom: 0px;">https://www.copyright.co.nz/understanding-copyright/what-is-copyright</p>
+          <p>to learn about copyright specifically in NZ</p>
         </div>
       </div>
+      <br />
+    </section>
 
-      <!-- Section two text -->
-      <h1 class="contactRightHeader h1 fw-bold float-end">
-        Promote Your Work With LITOutreach
-      </h1>
-
-      <!--Find a better solution....... -->
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <!--for this-->
-
-      <p class="contactRightParagraph float-end">
-        Email us your work along with the information to the right, and we'll
-        get back to you about promoting your creations through LITOutreach
-      </p>
-    </div>
-
-    <!-- Contact Footer -->
+    <!-- Footer -->
     <footer class="text-center text-white" style="background-color: #2c2b2b">
       <!-- Grid container -->
       <div class="container pt-4">
@@ -270,6 +223,7 @@
         >
         <br />
         <br />
+        <p class="text-center text-light p-3">Graphics made with Canva</p>
         <a
           class="text-center text-light p-3"
           href="https://www.freepik.com/vectors/old-library"
@@ -279,16 +233,8 @@
         <a
           class="text-center text-light p-3"
           href="https://www.freepik.com/vectors/art-room"
+          >Art room vector created by upklyak - www.freepik.com</a
         >
-          Art room vector created by upklyak - www.freepik.com
-        </a>
-        <br />
-        <a
-          class="text-center text-light p-3"
-          href="https://www.freepik.com/vectors/website-theme"
-        >
-          Website theme vector created by pikisuperstar - www.freepik.com
-        </a>
       </div>
     </footer>
 
