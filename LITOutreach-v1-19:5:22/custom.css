@@ -411,7 +411,7 @@
 .parallaxImg1 { 
   background-image: url("img/page_banners/welcome_banner.png");
 
-  min-height: 700px; 
+  min-height: 700px;
 
   background-attachment: fixed;
   background-position: center;
