@@ -12,9 +12,8 @@ document.getElementById("buttonFont").innerHTML = localStorage.getItem('buttonVa
 document.getElementById("buttonFont").innerHTML = "Dyslexia Font";
 
 
-
 function changeFontFamily() {
-  if (localStorage.getItem("buttonVar") == "Normal") {
+  if (localStorage.getItem("buttonVar") == "Normal Font") {
     document.body.style.fontFamily = "OpenDyslexic3Regular";
     document.getElementById("buttonFont").innerHTML = "Normal Font";
     localStorage.setItem('buttonVar', "Dyslexia Font");
@@ -23,7 +22,7 @@ function changeFontFamily() {
   } else {
     document.body.style.fontFamily = "Lato, sans-serif";
     document.getElementById("buttonFont").innerHTML = "Dyslexia Font";
-    localStorage.setItem('buttonVar', "Normal");
+    localStorage.setItem('buttonVar', "Normal Font");
     localStorage.setItem('bodyVar',"Lato, sans-serif" );
    
   }
