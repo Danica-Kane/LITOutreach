@@ -416,7 +416,25 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg1 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg1 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
 }
 
 .parallaxImg2 { 
@@ -430,6 +448,24 @@
   background-size: cover;
 }
 
+@media only screen and (max-width: 900px){
+  .parallaxImg2 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg2 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
 .parallaxImg3 { 
   background-image: url("img/page_banners/about_banner.png");
 
@@ -439,6 +475,24 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg3 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg3 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
 }
 
 .parallaxImg4 { 
@@ -452,6 +506,24 @@
   background-size: cover;
 }
 
+@media only screen and (max-width: 900px){
+  .parallaxImg4 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg4 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
 .parallaxImg5 { 
   background-image: url("img/page_banners/contact_banner.png");
 
@@ -461,6 +533,24 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg5 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg5 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
 }
 
 .parallaxImg6 { 
@@ -474,6 +564,24 @@
   background-size: cover;
 }
 
+@media only screen and (max-width: 900px){
+  .parallaxImg6 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg6 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
 .parallaxImg7 { 
   background-image: url("img/page_banners/copyright_banner.png");
 
@@ -483,6 +591,24 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg7 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg7 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
 }
 
 .parallaxImg8 { 
@@ -496,6 +622,24 @@
   background-size: cover;
 }
 
+@media only screen and (max-width: 900px){
+  .parallaxImg8{
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg8 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
 .parallaxImg9 { 
   background-image: url("img/page_banners/publishing_banner.png");
 
@@ -505,6 +649,24 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg9 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg9 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
 }
 
 .parallaxImg10 { 
@@ -518,6 +680,24 @@
   background-size: cover;
 }
 
+@media only screen and (max-width: 900px){
+  .parallaxImg10 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg10 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
 .parallaxImg11 { 
   background-image: url("img/page_banners/gallery_banner.png");
 
@@ -527,6 +707,24 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg11 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg11 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
 }
 
 .parallaxImg12 { 
@@ -540,6 +738,24 @@
   background-size: cover;
 }
 
+@media only screen and (max-width: 900px){
+  .parallaxImg12 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg12 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
 .parallaxImg13 { 
   background-image: url("img/page_banners/creators_banner.png");
 
@@ -551,6 +767,24 @@
   background-size: cover;
 }
 
+@media only screen and (max-width: 900px){
+  .parallaxImg13 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg13 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
 .parallaxImg14 { 
   background-image: url("img/page_banners/creators_banner_alt.png");
 
@@ -560,4 +794,22 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg14 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg14 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
 }
