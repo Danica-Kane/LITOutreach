@@ -411,12 +411,12 @@
 .parallaxImg1 { 
   background-image: url("img/page_banners/welcome_banner.png");
 
-  min-height: 100vh;
+  min-height: 700px; 
 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .parallaxImg2 { 
