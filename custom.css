@@ -126,13 +126,25 @@
   border-radius: 10px;
 }
 
+@media only screen and (max-width: 600px){
+  .welcomeHeader{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .welcomeHeader:after{
+    visibility: hidden;
+  }
+}
+
 .aboutHeader {
   font-style: bold;
   color: #004aad;
   margin-top: 30px;
   margin-right: 25px;
   font-size: 50px;
-  text-align: end;
+  text-align: right;
 }
 
 .aboutHeader:after {
@@ -142,6 +154,21 @@
   height: 0.2em;
   background-color: #004aad;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .aboutHeader{
+    text-align: center;
+    float: none;
+    margin-left: 50%;
+    margin-right: 30%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .aboutHeader:after{
+    visibility: hidden;
+  }
 }
 
 .aboutHeaderTWO {
@@ -169,6 +196,19 @@
   border-radius: 10px;
 }
 
+@media only screen and (max-width: 600px){
+  .contactLeftHeader{
+    text-align: center;
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .contactLeftHeader:after{
+    visibility: hidden;
+  }
+}
+
 .contactRightHeader {
   font-style: bold;
   color: #004aad;
@@ -187,6 +227,19 @@
   background-color: #004aad;
   border-radius: 10px;
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px){
+  .contactRightHeader{
+    text-align: center;
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .contactRightHeader:after{
+    visibility: hidden;
+  }
 }
 
 .copyrightHeader {
@@ -297,10 +350,25 @@
   width: 550px;
 }
 
+@media only screen and (max-width: 600px){
+  .welcomeParagraph{
+    text-align: center;
+    margin: 10px;
+  }
+}
+
 .aboutParagraph {
   margin-right: 25px;
   width: 740px;
   text-align: right;
+}
+
+@media only screen and (max-width: 600px){
+  .aboutParagraph{
+    text-align: center;
+    margin: 10px;
+    width: fit-content;
+  }
 }
 
 .contactLeftParagraph {
@@ -309,10 +377,32 @@
   width: 550px;
 }
 
+@media only screen and (max-width: 600px){
+  .contactLeftParagraph{
+    text-align: center;
+    margin: 10px;
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .contactIcons{
+    visibility: hidden;
+  }
+}
+
 .contactRightParagraph {
   margin-right: 25px;
   width: 550px;
   text-align: right;
+}
+
+@media only screen and (max-width: 600px){
+  .contactRightParagraph{
+    text-align: center;
+    margin: 10px;
+    width: fit-content;
+  }
 }
 
 .copyrightParagraph {
@@ -405,6 +495,42 @@
   margin-left: 0px;
   margin-right: 60px;
 }
+
+.card{
+  float: start;
+  width: 18rem;
+}
+
+@media only screen and (max-width: 600px){
+  .aboutImg {
+    margin-left: 13%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .card {
+    margin: 0 auto;
+    float: none;
+  }
+}
+
+.contactCard {
+  width: 35rem;
+  margin: 50px;
+  background-color: #0794e6;
+  border-radius: 0px;
+  border: transparent;
+}
+
+@media only screen and (max-width: 600px){
+  .contactCard {
+    margin: 5px;
+    float: none;
+  }
+}
+
+
 
 /* PARALEX IMG */
 
