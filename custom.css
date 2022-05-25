@@ -259,6 +259,18 @@
   border-radius: 10px;
 }
 
+@media only screen and (max-width: 600px){
+  .copyrightHeader{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .copyrightHeader:after{
+    visibility: hidden;
+  }
+}
+
 .publishingSecondHeader {
   font-style: bold;
   color: #d055ef;
@@ -411,6 +423,13 @@
   width: 550px;
 }
 
+@media only screen and (max-width: 600px){
+  .copyrightParagraph{
+    text-align: center;
+    margin: 10px;
+  }
+}
+
 .modalParagraph{
   margin-left: 20px;
   text-align: left;
@@ -431,6 +450,29 @@
   margin-top: 25px;
   margin-left: 25px;
   width: 550px;
+}
+
+.copyrightConText1{
+  margin-left: 50px;
+}
+.copyrightConText2{
+  text-align: right; 
+  margin-right: 50px;
+}
+
+@media only screen and (max-width: 900px){
+  .copyrightConText1 {
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .copyrightConText2 {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 50px;
+  }
 }
 
 /* ABOUT PAGE PROFILE */
@@ -479,12 +521,22 @@
 }
 
 .span {
-  height: 300px;
-  width: 10px;
+  height: 200px;
+  width: 1px;
+  font-weight: 100;
   background-color: #d055ef;
   border-radius: 100px;
   margin-left: 100px;
   margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 900px){
+  .span {
+    visibility: hidden;
+    margin: 0px;
+  }
 }
 
 .spanGallery {
@@ -529,7 +581,6 @@
     float: none;
   }
 }
-
 
 
 /* PARALEX IMG */
