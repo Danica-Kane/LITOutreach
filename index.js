@@ -15,7 +15,7 @@ document.getElementById("buttonFont").innerHTML = "Dyslexia Font";
 function changeFontFamily() {
   if (localStorage.getItem("buttonVar") == "Normal Font") {
     document.body.style.fontFamily = "OpenDyslexic3Regular";
-    document.getElementById("buttonFont").innerHTML = "Normal Font";
+    document.getElementById("buttonFont").innerHTML = "Dyslexia Font";
     localStorage.setItem('buttonVar', "Dyslexia Font");
     localStorage.setItem('bodyVar',"OpenDyslexic3Regular" );
    
