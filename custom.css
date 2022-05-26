@@ -275,17 +275,13 @@
   font-style: bold;
   color: #d055ef;
   margin-top: 30px;
-  margin-left: 20px;
   font-size: 20px;
 }
 
-.publishingSecondHeader:after {
-  content: " ";
-  display: block;
-  width: 23em;
-  height: 0.2em;
-  background-color: #d055ef;
-  border-radius: 10px;
+@media only screen and (max-width: 900px){
+  .publishingSecondHeader {
+    text-align: center;
+  }
 }
 
 .gallerySectionOneHeader {
@@ -303,6 +299,12 @@
   margin-top: 30px;
   font-size: 30px;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+  .gallerySecondHeader{
+    text-align: center;
+  }
 }
 
 .modalHeader {
@@ -352,6 +354,18 @@
   height: 0.2em;
   background-color: #008037;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .creatorsHeader{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .creatorsHeader:after{
+    visibility: hidden;
+  }
 }
 
 /* WRITEN CONTENT */
@@ -452,6 +466,14 @@
   width: 550px;
 }
 
+@media only screen and (max-width: 600px){
+  .creatorsParagraph {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 25px;
+  }
+}
+
 .copyrightConText1{
   margin-left: 50px;
 }
@@ -472,6 +494,38 @@
     text-align: center;
     margin: 10px;
     margin-bottom: 50px;
+  }
+}
+
+.publishingConText1{
+  margin-left: 50px;
+}
+.publishingConText2{
+  text-align: right; 
+  margin-right: 50px;
+}
+
+@media only screen and (max-width: 900px){
+  .publishingConText1 {
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .publishingConText2 {
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+.galleryConText1{
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px){
+  .galleryConText1 {
+    text-align: center;
   }
 }
 
@@ -539,13 +593,42 @@
   }
 }
 
+.spanPublishing {
+  height: 400px;
+  width: 1px;
+  font-weight: 100;
+  background-color: #d055ef;
+  border-radius: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 900px){
+  .spanPublishing {
+    visibility: hidden;
+    margin: 0px;
+  }
+}
+
 .spanGallery {
-  height: 450px;
-  width: 10px;
+  height: 500px;
+  width: 30px;
+  font-weight: 100;
   background-color: #7d2ae7;
   border-radius: 100px;
-  margin-left: 0px;
-  margin-right: 60px;
+  margin-left: 50px;
+  margin-right: 80px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 900px){
+  .spanGallery {
+    visibility: hidden;
+    margin: 0px;
+  }
 }
 
 .card{
@@ -582,6 +665,27 @@
   }
 }
 
+.gallaryIMG{
+  font-weight: bold;
+  width: 250px;
+  height: 380px;
+  text-align: center;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .gallaryIMG {
+    margin: 30px;
+    margin-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .danicaProfile {
+    margin-right: 60px;
+  }
+}
 
 /* PARALEX IMG */
 
