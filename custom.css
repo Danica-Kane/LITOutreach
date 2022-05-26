@@ -177,6 +177,7 @@
   margin-top: 30px;
   font-size: 30px;
   text-align: center;
+  margin-bottom:10px
 }
 
 .contactLeftHeader {
@@ -411,12 +412,6 @@
   }
 }
 
-@media only screen and (max-width: 600px){
-  .contactIcons{
-    visibility: hidden;
-  }
-}
-
 .contactRightParagraph {
   margin-right: 25px;
   width: 550px;
@@ -553,138 +548,6 @@
   background-color: #191818;
   overflow: hidden;
 
-}
-
-/* EXTRA */
-.specialDiv {
-  overflow: hidden;
-  width: 100%;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.span {
-  height: 200px;
-  width: 1px;
-  font-weight: 100;
-  background-color: #d055ef;
-  border-radius: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-@media only screen and (max-width: 900px){
-  .span {
-    visibility: hidden;
-    margin: 0px;
-  }
-}
-
-.spanPublishing {
-  height: 400px;
-  width: 1px;
-  font-weight: 100;
-  background-color: #d055ef;
-  border-radius: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-@media only screen and (max-width: 900px){
-  .spanPublishing {
-    visibility: hidden;
-    margin: 0px;
-  }
-}
-
-.spanGallery {
-  height: 500px;
-  width: 30px;
-  font-weight: 100;
-  background-color: #7d2ae7;
-  border-radius: 100px;
-  margin-left: 50px;
-  margin-right: 80px;
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-@media only screen and (max-width: 900px){
-  .spanGallery {
-    visibility: hidden;
-    margin: 0px;
-  }
-}
-
-.card{
-  float: start;
-  width: 18rem;
-}
-
-@media only screen and (max-width: 600px){
-  .aboutImg {
-    margin-left: 13%;
-    margin-right: 10%;
-  }
-}
-
-@media only screen and (max-width: 900px){
-  .card {
-    margin: 0 auto;
-    float: none;
-  }
-}
-
-.contactCard {
-  width: 35rem;
-  margin: 50px;
-  background-color: #0794e6;
-  border-radius: 0px;
-  border: transparent;
-}
-
-@media only screen and (max-width: 600px){
-  .contactCard {
-    margin: 5px;
-    float: none;
-  }
-}
-
-.gallaryIMG{
-  font-weight: bold;
-  width: 250px;
-  height: 380px;
-  text-align: center;
-  margin-right: 25px;
-  margin-top: 10px;
-}
-
-@media only screen and (max-width: 600px){
-  .gallaryIMG {
-    margin: 30px;
-    margin-right: 60px;
-  }
-}
-
-@media only screen and (max-width: 600px){
-  .danicaProfile {
-    margin-right: 60px;
-  }
 }
 
 /* PARALEX IMG */
@@ -1093,4 +956,193 @@
     background-size: contain;
     background-attachment: scroll;
   }
+}
+
+/* EXTRA */
+.specialDiv {
+  overflow: hidden;
+  width: 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.span {
+  height: 200px;
+  width: 1px;
+  font-weight: 100;
+  background-color: #d055ef;
+  border-radius: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 900px){
+  .span {
+    visibility: hidden;
+    margin: 0px;
+  }
+}
+
+.spanPublishing {
+  height: 400px;
+  width: 1px;
+  font-weight: 100;
+  background-color: #d055ef;
+  border-radius: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 900px){
+  .spanPublishing {
+    visibility: hidden;
+    margin: 0px;
+  }
+}
+
+.spanGallery {
+  height: 500px;
+  width: 30px;
+  font-weight: 100;
+  background-color: #7d2ae7;
+  border-radius: 100px;
+  margin-left: 50px;
+  margin-right: 80px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 900px){
+  .spanGallery {
+    visibility: hidden;
+    margin: 0px;
+  }
+}
+
+.card{
+  float: start;
+  width: 18rem;
+}
+
+@media only screen and (max-width: 600px){
+  .aboutImg {
+    margin-left: 13%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .card {
+    margin: 0 auto;
+    float: none;
+  }
+}
+
+.contactCard {
+  width: 35rem;
+  margin: 50px;
+  background-color: #0794e6;
+  border-radius: 0px;
+  border: transparent;
+}
+
+@media only screen and (max-width: 600px){
+  .contactCard {
+    margin: 5px;
+    float: none;
+  }
+}
+
+.gallaryIMG{
+  font-weight: bold;
+  width: 250px;
+  height: 380px;
+  text-align: center;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .gallaryIMG {
+    margin: 30px;
+    margin-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .danicaProfile {
+    margin-right: 60px;
+  }
+}
+
+.fontButton {
+  margin: 5px;
+}
+
+.footer {
+  background-color: #2c2b2b;
+}
+
+.copyrightSectionFooter {
+  background-color: rgba(10, 10, 10, 0.664);
+}
+
+.aboutMadeWithIcons{
+  width:100px;
+}
+
+.aboutMadeWithIcons2{
+  width:165px;
+}
+
+.aboutMadeWithIconsText{
+  text-align:center;
+}
+
+.contactFirstImg{
+  margin: 25px; 
+  margin-top: 0px;
+}
+
+.contactIcons{
+  margin-left: 25px; 
+  margin-right: 10px; 
+  color: #004aad
+}
+
+@media only screen and (max-width: 600px){
+  .contactIconsBlock{
+    visibility: hidden;
+  }
+}
+
+.sectionTwoBackground{
+  background-color: #f8f8f8;
+}
+
+.contactCardBody{
+  margin: 10px"
+}
+
+.contactCartTitle{
+  font-weight: bold;
+}
+
+.contactCartTextItalic{
+  font-style: italic;
 }
