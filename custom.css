@@ -1,12 +1,4 @@
-/*ORIGIONAL NAV PILLS FORMATING*/
-/*.nav-pills-one > li > a.active {
-    background-color: #38B6FF !important;
-    border-radius: 5px;
-} */
-
-/*-------------*/
-
-/*NEW NAV PILLS/UNDERLINES*/
+/*NAV PILLS/UNDERLINES*/
 
 .nav-one-1 > li > a.active {
   background-color: transparent !important;
@@ -1145,4 +1137,13 @@
 
 .contactCartTextItalic{
   font-style: italic;
+}
+
+.copPubSecondHeader{
+  font-weight: bold; 
+  margin-bottom: 0px;
+}
+
+.gallerySecontion1Text{
+  text-align: center;
 }
