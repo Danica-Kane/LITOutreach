@@ -215,7 +215,7 @@
 .contactRightHeader:after {
   content: " ";
   display: block;
-  width: 11.3em;
+  width: 10.3em;
   height: 0.2em;
   background-color: #004aad;
   border-radius: 10px;
@@ -226,6 +226,7 @@
   .contactRightHeader{
     text-align: center;
     float: none;
+    width: 460px;
   }
 }
 
@@ -373,6 +374,7 @@
   .welcomeParagraph{
     text-align: center;
     margin: 10px;
+    width: 480px;
   }
 }
 
@@ -428,6 +430,7 @@
   .copyrightParagraph{
     text-align: center;
     margin: 10px;
+    width: 500px;
   }
 }
 
@@ -458,6 +461,7 @@
     text-align: center;
     margin: 10px;
     margin-bottom: 25px;
+    width: 500px;
   }
 }
 
@@ -520,6 +524,12 @@
 .aboutProfileIcon {
   margin: 25px;
   width: 430px;
+}
+
+@media only screen and (max-width: 600px){
+  .aboutProfileIcon {
+    width: 380px;
+  }
 }
 
 /* FONTS */
@@ -950,6 +960,37 @@
   }
 }
 
+/* FORM */
+.contactForm{
+  max-width: 550px;
+  background-color: #0794e6;
+  padding: 10px;
+  margin: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactForm {
+    margin: 25px;
+    max-width: 450px;
+  }
+}
+
+.form-label{
+  color: #ffffff;
+}
+
+.contantFormHeader{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.contantFormHeader2{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 /* EXTRA */
 .specialDiv {
   overflow: hidden;
@@ -1045,21 +1086,6 @@
   }
 }
 
-.contactCard {
-  width: 35rem;
-  margin: 50px;
-  background-color: #0794e6;
-  border-radius: 0px;
-  border: transparent;
-}
-
-@media only screen and (max-width: 600px){
-  .contactCard {
-    margin: 5px;
-    float: none;
-  }
-}
-
 .gallaryIMG{
   font-weight: bold;
   width: 250px;
@@ -1111,6 +1137,12 @@
   margin-top: 0px;
 }
 
+@media only screen and (max-width: 600px){
+  .contactFirstImg{
+    width: 80%;
+  }
+}
+
 .contactIcons{
   margin-left: 25px; 
   margin-right: 10px; 
@@ -1127,18 +1159,6 @@
   background-color: #f8f8f8;
 }
 
-.contactCardBody{
-  margin: 10px"
-}
-
-.contactCartTitle{
-  font-weight: bold;
-}
-
-.contactCartTextItalic{
-  font-style: italic;
-}
-
 .copPubSecondHeader{
   font-weight: bold; 
   margin-bottom: 0px;
@@ -1146,4 +1166,11 @@
 
 .gallerySecontion1Text{
   text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+  .gallerySecontion1Text{
+    width: 470px;
+    margin: 25px;
+  }
 }

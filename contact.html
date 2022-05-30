@@ -164,66 +164,86 @@
 
     <!--Section Two-->
     <div class="specialDiv sectionTwoBackground">
-      <!-- Section Two card -->
-      <div class="card text-white mb-3 float-start contactCard">
-        <div class="card-body contactCardBody">
-          <h5 class="card-title contactCartTitle">Basic...</h5>
-          <p class="card-text">
-            Name : <br />
-            Contact Information : <br />
-            Breif Synopsis Of Your Work : <br />
-            Link To Your Work In Desired Format :
-          </p>
-          <p class="card-text contactCartTextItalic">
-            ( E.G. Amazon Link, Wattpad Link, Google Drive PDF, Other )
-          </p>
-          <h5 class="card-title contactCartTitle">
-            If you aren't already a creator...
-          </h5>
-          <p class="card-text">
-            Bio For Your Creator Profile : <br />
-            Link Profile Picture You Would Like Used :
-          </p>
+      <!-- Section Two form -->
+      <form class="contactForm container-fluid float-start">
+        <p class="contantFormHeader">SUBMIT WORK</p>
+        <p class="contantFormHeader2">Basic...</p>
+        <div class="row">
+          <div class="mb-3 col">
+            <label for="nameInput" class="form-label"
+              >Name (or pen-name) :</label
+            >
+            <input
+              type="name"
+              class="form-control"
+              id="nameInput"
+              placeholder="name example"
+              required
+            />
+          </div>
+          <div class="mb-3 col">
+            <label for="emailInput" class="form-label">Email address :</label>
+            <input
+              type="email"
+              class="form-control"
+              id="emailInput"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
         </div>
-      </div>
+        <div class="mb-3">
+          <label for="workInput" class="form-label">Link to your work :</label>
+          <input
+            type="work"
+            class="form-control"
+            id="workInput"
+            placeholder="E.G. Amazon Link, Wattpad Link, Google Drive PDF, Other"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="descriptionOfWork" class="form-label">Brief description of work :</label>
+          <textarea
+            class="form-control"
+            id="descriptionOfWork"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+        <p class="contantFormHeader2">If you aren't already a creator...</p>
+        <div class="row">
+          <div class="mb-3 col">
+            <label for="formFile" class="form-label"
+              >Profile picture you would like used</label
+            >
+            <input class="form-control" type="file" id="formFile" />
+          </div>
+          <div class="mb-3 col">
+            <label for="creatorBio" class="form-label"
+              >Bio For Your Creator Profile :</label
+            >
+            <textarea class="form-control" id="creatorBio" rows="1"></textarea>
+          </div>
+        </div>
+        <button class="btn btn-dark" id="submitButton" type="submit">Submit form</button>
+        <br>
+        <div id="liveAlertPlaceholder"></div>
+      </form>
 
       <!-- Section two text -->
-      <h1 class="contactRightHeader h1 fw-bold float-end">
+      <h1 class="contactRightHeader float-end h1 fw-bold">
         Promote Your Work With LITOutreach
       </h1>
-
-      <!--Find a better solution....... -->
       <br />
       <br />
       <br />
       <br />
       <br />
-      <!--for this-->
-
-      <p class="contactRightParagraph float-end">
-        Email us your work along with the information to the right, and we'll
-        get back to you about promoting your creations through LITOutreach
-      </p>
-    </div>
-
-    <!--Section Two TESTER-->
-    <div class="specialDiv sectionTwoBackground">
-      <!-- Section Two card -->
-      
-
-      <!-- Section two text -->
-      <h1 class="contactRightHeader h1 fw-bold float-end">
-        Promote Your Work With LITOutreach
-      </h1>
-
-      <!--Find a better solution....... -->
       <br />
       <br />
       <br />
       <br />
-      <br />
-      <!--for this-->
-
       <p class="contactRightParagraph float-end">
         Email us your work along with the information to the right, and we'll
         get back to you about promoting your creations through LITOutreach
