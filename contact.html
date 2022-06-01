@@ -165,7 +165,7 @@
     <!--Section Two-->
     <div class="specialDiv sectionTwoBackground">
       <!-- Section Two form -->
-      <form class="contactForm container-fluid float-start">
+      <form class="contactForm container-fluid float-start needs-validation" novalidate>
         <p class="contantFormHeader">SUBMIT WORK</p>
         <p class="contantFormHeader2">Basic...</p>
         <div class="row">
@@ -174,8 +174,8 @@
               >Name (or pen-name) :</label
             >
             <input
-              type="name"
-              class="form-control"
+              type="text"
+              class="form-control nameInput"
               id="nameInput"
               placeholder="name example"
               required
@@ -184,8 +184,8 @@
           <div class="mb-3 col">
             <label for="emailInput" class="form-label">Email address :</label>
             <input
-              type="email"
-              class="form-control"
+              type="text"
+              class="form-control emailInput"
               id="emailInput"
               placeholder="name@example.com"
               required
@@ -195,8 +195,8 @@
         <div class="mb-3">
           <label for="workInput" class="form-label">Link to your work :</label>
           <input
-            type="work"
-            class="form-control"
+            type="text"
+            class="form-control workInput"
             id="workInput"
             placeholder="E.G. Amazon Link, Wattpad Link, Google Drive PDF, Other"
             required
@@ -205,8 +205,9 @@
         <div class="mb-3">
           <label for="descriptionOfWork" class="form-label">Brief description of work :</label>
           <textarea
-            class="form-control"
+            class="form-control descriptionInput"
             id="descriptionOfWork"
+            type="text"
             rows="3"
             required
           ></textarea>
@@ -223,12 +224,11 @@
             <label for="creatorBio" class="form-label"
               >Bio For Your Creator Profile :</label
             >
-            <textarea class="form-control" id="creatorBio" rows="1"></textarea>
+            <textarea class="form-control" type="text" id="creatorBio" rows="1"></textarea>
           </div>
         </div>
-        <button class="btn btn-dark" id="submitButton" type="submit">Submit form</button>
+        <button class="btn btn-dark button" id="submitButton" type="submit">Submit form</button>
         <br>
-        <div id="liveAlertPlaceholder"></div>
       </form>
 
       <!-- Section two text -->
@@ -321,11 +321,6 @@
         </a>
       </div>
     </footer>
-
-
-    <!--TESTING-->
-    <input class="input" type="text" placeholder="fill me">
-    <button class="button">Click Me</button>
 
     <!--link to Bootstrap JS-->
     <script

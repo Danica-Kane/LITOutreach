@@ -27,41 +27,27 @@ function changeFontFamily() {
 }
 
 //SUBMIT BUTTON
+(() => {
+  "use strict";
 
-const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll(".needs-validation");
 
-const alert = (message, type) => {
-  const wrapper = document.createElement("div");
-  wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible alert-success" role="alert" style="margin-top: 10px;">`,
-    `   <div>${message}</div>`,
-    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    "</div>",
-  ].join("");
+  // Loop over them and prevent submission
+  Array.from(forms).forEach((form) => {
+    form.addEventListener(
+      "submit",
+      (event) => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        } else {
+          alert("Your submission has been recorded");
+        }
 
-  alertPlaceholder.append(wrapper);
-};
-
-const alertTrigger = document.getElementById("submitButton");
-
-if (alertTrigger) {
-  alertTrigger.addEventListener("click", () => {
-    alert("Submitted!");
+        form.classList.add("was-validated");
+      },
+      false
+    );
   });
-}
-
-//nameInput != null && emailInput != null && workInput != null && descriptionOfWork != null;
-
-//TESTING
-let input = document.querySelector(".input");
-let button = document.querySelector(".button");
-button.disabled = true;
-input.addEventListener("change", stateHandle);
-
-function stateHandle() {
-    if(document.querySelector(".input").value === "") {
-        button.disabled = true;
-    } else {
-        button.disabled = false;
-    }
-}
+})();
