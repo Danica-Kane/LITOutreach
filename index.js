@@ -27,6 +27,8 @@ function changeFontFamily() {
 }
 
 //SUBMIT BUTTON
+src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+
 (() => {
   "use strict";
 
@@ -41,8 +43,10 @@ function changeFontFamily() {
         if (!form.checkValidity()) {
           event.preventDefault();
           event.stopPropagation();
+          alertTrigger = false;
         } else {
-          alert("Your submission has been recorded");
+          //alert("Your submission has been recorded");
+          swal("Good job!", "You clicked the button!", "success");
         }
 
         form.classList.add("was-validated");
