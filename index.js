@@ -27,7 +27,9 @@ function changeFontFamily() {
 }
 
 //SUBMIT BUTTON
-src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+import swal from 'sweetalert';
+swal("Good job!", "You clicked the button!", "success");
+
 
 (() => {
   "use strict";
@@ -45,8 +47,7 @@ src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
           event.stopPropagation();
           alertTrigger = false;
         } else {
-          //alert("Your submission has been recorded");
-          swal("Good job!", "You clicked the button!", "success");
+          alert("Your submission has been recorded");
         }
 
         form.classList.add("was-validated");
