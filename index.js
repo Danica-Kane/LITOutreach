@@ -8,7 +8,8 @@ if (!localStorage.getItem("buttonVar")) {
 
 //set the initial css rules
 document.body.style.fontFamily = localStorage.getItem("bodyVar");
-document.getElementById("buttonFont").innerHTML = localStorage.getItem("buttonVar");
+document.getElementById("buttonFont").innerHTML =
+  localStorage.getItem("buttonVar");
 document.getElementById("buttonFont").innerHTML = "Dyslexia Font";
 
 function changeFontFamily() {
@@ -26,6 +27,7 @@ function changeFontFamily() {
 }
 
 //SUBMIT BUTTON
+var alertTrigger;
 
 (() => {
   "use strict";
@@ -42,7 +44,7 @@ function changeFontFamily() {
           event.preventDefault();
           event.stopPropagation();
         } else {
-          //alert("Your submission has been recorded");
+          alertTrigger = "true";
         }
 
         form.classList.add("was-validated");
@@ -52,11 +54,26 @@ function changeFontFamily() {
   });
 })();
 
+//SUBMIT MODAL SETUP
+const Toast = Swal.mixin({
+  toast: true,
+  position: "top-end",
+  showConfirmButton: false,
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.addEventListener("mouseenter", Swal.stopTimer);
+    toast.addEventListener("mouseleave", Swal.resumeTimer);
+  },
+});
 
-  document.getElementById('submitButton').addEventListener('click', function(){
-  Swal.fire(
-  'SUCCSESS',
-  'Your submission has been recorded',
-  'success'
-  )
-  })
+//SUBMIT MODAL ACTIVATE
+document.getElementById("submitButton").addEventListener("click", function () {
+  if (alertTrigger == "true") {
+    Toast.fire({
+      icon: "success",
+      title: "Submitted successfully",
+    });
+    setTimeout(location.reload.bind(location), 3000);
+  }
+});
