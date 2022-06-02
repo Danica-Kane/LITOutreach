@@ -26,6 +26,7 @@ function changeFontFamily() {
 }
 
 //SUBMIT BUTTON
+
 (() => {
   "use strict";
 
@@ -42,12 +43,6 @@ function changeFontFamily() {
           event.stopPropagation();
         } else {
           //alert("Your submission has been recorded");
-          swal({
-            title: "Good job!",
-            text: "You clicked the button!",
-            icon: "success",
-            button: "Aww yiss!",
-          });
         }
 
         form.classList.add("was-validated");
@@ -57,3 +52,11 @@ function changeFontFamily() {
   });
 })();
 
+
+  document.getElementById('submitButton').addEventListener('click', function(){
+  Swal.fire(
+  'SUCCSESS',
+  'Your submission has been recorded',
+  'success'
+  )
+  })
