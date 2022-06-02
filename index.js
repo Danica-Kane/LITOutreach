@@ -8,8 +8,7 @@ if (!localStorage.getItem("buttonVar")) {
 
 //set the initial css rules
 document.body.style.fontFamily = localStorage.getItem("bodyVar");
-document.getElementById("buttonFont").innerHTML =
-  localStorage.getItem("buttonVar");
+document.getElementById("buttonFont").innerHTML = localStorage.getItem("buttonVar");
 document.getElementById("buttonFont").innerHTML = "Dyslexia Font";
 
 function changeFontFamily() {
@@ -27,10 +26,6 @@ function changeFontFamily() {
 }
 
 //SUBMIT BUTTON
-import swal from 'sweetalert';
-swal("Good job!", "You clicked the button!", "success");
-
-
 (() => {
   "use strict";
 
@@ -45,9 +40,14 @@ swal("Good job!", "You clicked the button!", "success");
         if (!form.checkValidity()) {
           event.preventDefault();
           event.stopPropagation();
-          alertTrigger = false;
         } else {
-          alert("Your submission has been recorded");
+          //alert("Your submission has been recorded");
+          swal({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success",
+            button: "Aww yiss!",
+          });
         }
 
         form.classList.add("was-validated");
@@ -56,3 +56,4 @@ swal("Good job!", "You clicked the button!", "success");
     );
   });
 })();
+
