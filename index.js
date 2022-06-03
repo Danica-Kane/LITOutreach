@@ -27,8 +27,6 @@ function changeFontFamily() {
 }
 
 //SUBMIT BUTTON
-var alertTrigger;
-
 (() => {
   "use strict";
 
@@ -44,7 +42,13 @@ var alertTrigger;
           event.preventDefault();
           event.stopPropagation();
         } else {
-          alertTrigger = "true";
+          if (document.getElementById("nameInput").value.length > 0) {
+            Toast.fire({
+              icon: "success",
+              title: "Submitted successfully",
+            });
+            setTimeout(location.reload.bind(location), 3000);
+          }
         }
 
         form.classList.add("was-validated");
@@ -65,15 +69,4 @@ const Toast = Swal.mixin({
     toast.addEventListener("mouseenter", Swal.stopTimer);
     toast.addEventListener("mouseleave", Swal.resumeTimer);
   },
-});
-
-//SUBMIT MODAL ACTIVATE
-document.getElementById("submitButton").addEventListener("click", function () {
-  if (alertTrigger == "true") {
-    Toast.fire({
-      icon: "success",
-      title: "Submitted successfully",
-    });
-    setTimeout(location.reload.bind(location), 3000);
-  }
 });
